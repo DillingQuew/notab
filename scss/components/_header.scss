@@ -1,0 +1,64 @@
+.header {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   z-index: 100;
+   left: 0;
+   &__container {
+      padding: 23px 85px 0;
+      display: flex;
+      gap:108px;
+   }
+
+   &__logo {
+      width: 211px;
+      display: flex;
+      align-items: baseline;
+      align-items: center;
+      gap:8px;
+      flex-basis:211px;
+      flex-grow: 0;
+   }
+
+   &__name {
+      display: inline-block;
+      padding-top: 8px;
+      place-self: center;
+   }
+
+   &__list {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      gap:20px;
+      justify-content: flex-start;
+   }
+
+   &__item {
+      position: relative;
+      top: 4px;
+      &--login::before {
+         content:'';
+         position: absolute;
+         display: inline-block;
+         width: 26px;
+         height: 25px;
+         background-image: url('/img/person.svg');
+         top: 0px;
+         left: 0px;
+      }
+   }
+
+   &__link {
+      font-family: 'NotoSans', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      border-bottom: 1px solid $white-color;
+      color: $white-color;
+      margin-left: 38px;
+      margin-top: 20px;
+      padding: 0px 3.1px;
+   }
+}

@@ -1,0 +1,42 @@
+.scanner {
+   margin-bottom: 50px;
+   &__container {
+      background: 
+      linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%),
+      url('/img/scanner-bg.jpg');
+      background-position: 0 -14px, 0 14px;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 100% max(1060px), contain;
+      display: flex;
+      align-items: flex-end;
+      padding-top: 379px;
+   }
+
+   &__images {
+      display: flex;
+      gap: 49.44px;
+      position: relative;
+  
+   }
+
+   &__phone {
+      max-width: 100%;
+      position: relative;
+      bottom: 0;
+      left: -26px;
+   }
+
+   &__article {
+      width: 30%;
+      padding: 20px 24px;
+      margin-bottom: 133px;
+   }
+
+   &__title {
+      margin-bottom: 23px;
+   }
+
+   &__text {
+      max-width: 316px;
+   }
+}

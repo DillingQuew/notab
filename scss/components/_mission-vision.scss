@@ -1,0 +1,64 @@
+.mission-vision {
+   position: relative;
+   z-index: 10;
+   padding-bottom: 305px;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      // gap: 100px;
+      
+   }
+
+
+   &__phone {
+      // transform: rotate(-90deg);
+      position: relative;
+      width: 680px;
+      height: 672px;
+      flex-shrink: 1;
+   }
+
+   &__image {
+      
+      position: absolute;
+      z-index: 100;
+      right: -182px;
+      top: -24px;
+   }
+
+   &__article {
+      flex-shrink: 1;
+      max-width: 450px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 100;
+   }
+
+   &__title {
+      margin-bottom: 23px;
+      position: relative;
+      z-index: 10;
+      &::before {
+         position: absolute;
+         z-index: -1;
+         content:'';
+         width: 80px;
+         height: 80px;
+         background: #F101BF;
+         opacity: 0.7;
+         filter: blur(50px);
+         right: 50px;
+         top: 0;
+      }
+   }
+
+   &__descr {
+      max-width: 315px;
+      position: relative;
+      z-index: 10;
+   }
+}

@@ -1,0 +1,61 @@
+.site-container {
+   overflow: hidden;
+   background-color: $site-color;
+}
+
+.container {
+   // stock:1440px
+   // padding: 100px
+   max-width: 1440px;
+   padding: 0 100px;
+   margin: 0 auto;
+}
+
+.flex {
+   display: flex;
+}
+
+.section-title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 51px;
+   line-height: 62px;
+   color: $white-color;
+   // margin-bottom: 23px;
+}
+
+.section-text {
+   font-family: 'NotoSans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25px;
+   color: $white-color;
+}
+
+%blur {
+   width: 125px;
+   height: 125px;
+   background: rgba(96, 92, 234, 0.5);
+   filter: blur(50px);
+}
+
+.blur-first-phone {
+   background: rgba(250, 0, 255, 0.2);
+   filter: blur(125px);
+   transform: rotate(-105.26deg);
+   width: 662.63px;
+   height: 783.03px;
+}
+
+.download {
+   display: flex;
+   width: 376px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   &__item {
+      z-index: 100;
+   }
+}

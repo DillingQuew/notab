@@ -1,0 +1,35 @@
+.tool {
+   padding: 72px 0;
+
+   &__container {
+      display: flex;
+   }
+
+   &__article {
+      width: 42%;
+      padding-top: 89px;
+      padding-right: 20px;
+   }
+
+   &__title {
+      margin-bottom: 33px;
+      position: relative;
+      &::before {
+         content: '';
+         background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+         opacity: 0.1;
+         filter: blur(125px);
+         transform: rotate(5.78deg);
+         display: inline-block;
+         position: absolute;
+         left: -239.82px;
+         top: -190px;
+         width: 426.21px;
+         height: 438.35px;
+      }
+   }
+
+   &__text {
+      max-width: 395px;
+   }
+}

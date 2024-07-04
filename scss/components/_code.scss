@@ -1,0 +1,87 @@
+.code {
+
+   &__container {
+      // padding-top: 150px;
+      padding: 162px 0 0;
+      display: flex;
+
+      gap: 11px;
+      // flex-wrap: wrap;
+   }
+
+
+   &__left {
+      // position: relative;
+
+   }
+
+   &__info {
+      max-width: 45%;
+      // max-width: 100%;
+      position: relative;
+      z-index: 10;
+      left: 162px;
+      bottom: 101px;
+      padding: 20px;
+   }
+
+   &__right {
+      position: relative;
+      &::before {
+         content: url('/img/Nightlife.svg');
+         position: absolute;
+         top: -26px;
+         right: 99px;
+         z-index: 10;
+         display: inline-block;
+      }
+   }
+
+   &__title {
+      margin-bottom: 23px;
+   }
+
+   &__text {
+      max-width: 315px;
+   }
+
+   &__phone-wrapper {
+      position: relative;
+      min-height: 600px;
+   }
+
+   &__image {
+
+      &-phone {
+         position: absolute;
+         top: -409px;
+         left: -151px;
+         z-index: 2;
+         width: 114.6%;
+      }
+
+      &-left {
+         position: relative;
+         top: 0;
+         z-index: 2;
+         width: 100%;
+         top: -12px;
+      }
+
+      &-right {
+         position: relative;
+         top: -17px;
+         width: 100%;
+        
+      }
+
+   }
+
+   &__download {
+      margin-top: 58px;
+   }
+
+   &__phones {
+      display: flex;
+   }
+}

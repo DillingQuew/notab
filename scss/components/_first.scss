@@ -1,0 +1,135 @@
+.first {
+   // height: 100vh;
+   position: relative;
+   z-index: 99;
+   padding-bottom: 94px;
+   // padding-bottom: 93px;
+   &__container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__info {
+      padding-top: calc(143px + 132px);
+      display: flex;
+      // max-height: 850px;
+      position: relative;
+      justify-content: space-between;
+      margin-bottom: 43px;
+   }
+
+   &__article {
+      position: relative;
+      z-index: 20;
+   }
+
+   &__title {
+      font-size: 64px;
+      line-height: 70px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 129px;
+   }
+
+   &__descr {
+      font-size: 20px;
+      line-height: 27px;
+      max-width: 475px;
+      padding-left: 105px;
+      position: relative;
+
+      &::before {
+         position: absolute;
+         left: -31px;
+         top: 15px;
+         transform-origin:bottom center;
+         content:'';
+         width: 139.43px;
+         height: 0px;
+         border: 2px solid $white-color;
+         background-color: $white-color;
+         transform: rotate(120.61deg);
+         z-index: 10;
+      }
+
+      &::after {
+         content:'';
+         @extend %blur;
+         position: absolute;
+         top: -65px;
+         left: -6px;
+         z-index: -1;
+      }
+   }
+
+   &__phone {
+      position: relative;
+      
+      &::before {
+         content: '';
+         background: #000000;
+         opacity: 0.4;
+         filter: blur(35.8417px);
+         width: 307.77px;
+         height: 631.35px;
+         display: inline-block;
+         position: absolute;
+         bottom: 61.85px;
+         z-index: -1;
+      }
+
+      position: relative;
+      margin-right: 59px;
+      width: 372px;
+      height: 575px;
+
+      &::after {
+         content:'';
+         background-image: url('/img/blur-phone.svg');
+         background-position: 0 0;
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: inline-block;
+         width: 1354px;
+         height: 1061px;
+         position: absolute;
+         top: -520px;
+         left: -450px;
+         z-index: -1;
+      }
+   }
+
+   &__image {
+      position: relative;
+      right: 126px;
+      top: -274px;
+      z-index: 10;
+   }
+
+   &__phone-blur {
+      position: absolute;
+      z-index: 1;
+      bottom: 25px;
+      right: -500px;
+   }
+
+   &__links {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 13px;
+      flex-wrap: wrap;
+   }
+
+   &__subtitle {
+      font-size: 35px;
+      line-height: 70px;
+      text-transform: uppercase;
+   }
+
+   &__download {
+      margin-right: 63px;
+      margin-top: 7px;
+   }
+}

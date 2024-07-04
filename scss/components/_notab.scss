@@ -1,0 +1,17 @@
+.notab {
+   background-image: url('/img/notab-bg.jpg');
+   background-position: center -71px;
+   // background-size: cover;
+   background-repeat: repeat-x;
+   padding: 307px 0 200px 0;
+
+   &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   
+   &__image {
+      max-width: 100%;
+   }
+}

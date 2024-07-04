@@ -1,0 +1,63 @@
+.footer {
+   &__container {
+      padding-bottom: 85.85px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+      &::before {
+         content: '';
+         display: inline-block;
+         background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+         opacity: 0.3;
+         filter: blur(125px);
+         transform: rotate(5.78deg);
+         width: 405.99px;
+         height: 411.6px;
+         bottom: -125px;
+         left: -45px;
+         position: absolute;
+         z-index: -1;
+      }
+   }
+   &__copy {
+      padding-top: 5px;
+   }
+
+   &__logo {
+      margin-bottom: 15px;
+   }
+   %text {
+      font-family: 'Avenir';
+      font-style: normal;
+
+      color: $white-color;
+   }
+   &__mail {
+      @extend %text; 
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 19px;
+   }
+
+   &__trademark {
+      @extend %text; 
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 25px;
+   }
+
+   &__links {
+      @extend %text;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 25px;
+   }
+   &__links-item:first-child {
+      padding-left: 3px;
+   }
+   &__links-item:not(:last-child) {
+      margin-bottom: 25px;
+   }
+}

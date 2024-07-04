@@ -1,0 +1,71 @@
+.generate {
+   background-image: url('/img/generatge-bg.png');
+   background-repeat: no-repeat;
+   background-position: center 149px;
+
+   &__phone-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-left: 19px;
+      padding-top: 41px;
+      position: relative;
+      z-index: 10;
+
+      &::before {
+         position: absolute;
+         content:'';
+         display: inline-block;
+         width: 1022.45px;
+         height: 952.07px;
+         background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+         opacity: 0.15;
+         filter: blur(155.784px);
+         border-radius: 476.034px;
+         transform: rotate(-0.55deg);
+         top: -147px;
+         right: 50%;
+         transform:translateX(50%);
+         z-index: 0;
+      }
+   }
+
+   &__phone {
+      // display: flex;
+      position: relative;
+      &-text {
+         position: absolute;
+         font-size: 21px;
+         line-height: 26px;
+         right: -284px;
+         bottom: 357px;
+         
+         &::before {
+            content: url('/img/generate-arrow.svg');
+            position: relative;
+            top: -35px;
+            left: 4px;
+         }
+      }
+   }
+
+
+   &__image {
+      position: relative;
+      z-index: 10;
+   }
+
+   &__article {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 79px;
+   }
+
+   &__title {
+      max-width: 381px;
+   }
+
+   &__text {
+      max-width: 292px;
+      margin-top: 37px;
+   }
+}
